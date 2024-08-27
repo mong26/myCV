@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My-Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/MG.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar1.png" alt="Marlou Reuben Gacutan" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Marlou Reuben Gacutan">Marlou Reuben F. Gacutan</h1>
+
+          <p class="title">Administrative Assistant/<br>Freelance Web Developer</br>
+                    </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:marloureubengacutan@gmail.com" class="contact-link">marloureubengacutan@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="viber://chat?number=09673125479" class="contact-link">+63-967-312-5479</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">October 23, 1996</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>San Bartlome, Novaliches, Quezon City</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/footlongs" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/gacutanmarloureuben/?hl=en" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          
+          <p>
+            I'm a committed and diligent Freelance Web Developer who values truthfulness and fosters positive work relationships.
+            My goal is to create websites that are not only functional and user-friendly but also visually appealing and engaging.
+            I put to sum a personal touch to every project, ensuring that your site is both eye-catching and easy to navigate.
+          </p>
+
+          <p>
+            I believe in strong communication and precision, always following the exact instructions provided to deliver a product
+            that truly reflects your message and identity. Your satisfaction is my top priority, and I am dedicated to working on
+            each task until you're completely content with the results.
+          </p>
+
+        </section>
+
+      </section>
+
+      <section class="skill">
+
+        <h3 class="h3 skills-title">My skills</h3>
+
+        <ul class="skill-list">
+          
+          <li class="skill-item">
+
+        <div class="star-rating"></div> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        .checked {
+          color:orange
+        }
+        </style>
+
+        <h5 class="h5 skill-text">Computer Hardware</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+        <h5 class="h5 skill-text">MS Office</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+        <h5 class="h5 skill-text">Photoshop</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+
+        <h5 class="h5 skill-text">Web development</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        
+      </section>
+
+    </section>
+
+  </br>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development (Front-End)</h4>
+
+                <p class="service-item-text">
+                  Dedicated and detail-oriented Front-End Web Developer with a strong passion for creating visually appealing, 
+                  user-friendly, and highly functional websites. Proficient in HTML, CSS, JavaScript, and responsive design, 
+                  with a deep understanding of modern front-end frameworks and libraries. Experienced in translating client 
+                  requirements into engaging digital experiences, ensuring seamless usability across all devices. Strong 
+                  communicator with a commitment to excellence, focused on delivering projects that exceed client expectations. 
+                  Adept at collaborating with cross-functional teams, continuously improving skills, and staying current with 
+                  the latest industry trends.
+                </p>
+
+              <div class="service-icon-wrapper">
+                <div class="service-icon-box">
+                  <img src="./assets/images/html.png" alt="HTML icon" width="40">
+                  <img src="./assets/images/JS.png" alt="JavaScript icon" width="40">
+                  <img src="./assets/images/css.png" alt="CSS icon" width="40">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap icon" width="40">
+                  <img src="./assets/images/mysql.png" alt="MySQL icon" width="40">
+                </div>
+              </div>
+            </div>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photoshop</h4>
+
+                <p class="service-item-text">
+                  Proficient in Adobe Photoshop with hands-on experience from previous employment. Skilled in graphic 
+                  design, photo editing, and creating visually compelling content. Demonstrated ability to meet creative
+                  requirements and deliver impactful visuals for diverse projects.
+                </p>
+
+                <div class="service-icon-wrapper">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/icon-ps.svg" alt="HTML icon" width="40">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Proficiency in MS Office</h4>
+
+                <p class="service-item-text">
+                  Seasoned in Microsoft Office specially in Excel with specialized expertise in functions, particularly VLOOKUP, HLOOKUP and other functions. 
+                  Proficient in leveraging these functions for data analysis, creating dynamic spreadsheets, and ensuring 
+                  accurate information retrieval. 
+                </p>
+
+                <div class="service-icon-wrapper">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/word.png" alt="HTML icon" width="40">
+                    <img src="./assets/images/icon-excel.svg" alt="JavaScript icon" width="40">
+                    <img src="./assets/images/powerpoint.png" alt="CSS icon" width="40">
+                    <img src="./assets/images/publisher.png" alt="Bootstrap icon" width="40">
+                    <img src="./assets/images/visio.png" alt="MySQL icon" width="40">
+                  </div>
+              </div>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Literacy</h4>
+
+                <p class="service-item-text">
+                  Proficient in utilizing software applications for efficient document management, data entry, and task 
+                  organization. Additionally, experienced as a computer technician adds another layer of expertise, 
+                  potentially enabling to troubleshoot technical issues and ensure smooth functioning of office technology.
+                </p>
+
+                <div class="service-icon-wrapper">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/tech.png" alt="HTML icon" width="40">
+                    <img src="./assets/images/icon-comp.svg" alt="JavaScript icon" width="40">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar.png" alt="Owner of Okeanus Beach Resort" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Owner of Okeanus Beach Resort</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    Mr. Gacutan has provided as with a great asset with the creation of okeanus21.com. He was savvy, provided excellent 
+                    ideas to build a solid structure for our website and business. He was adaptable to our neeeds especially when it comes
+                    to our management tools. Overall a wonderful person that came to our neccessities.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar.png" alt="James Peter Pulmano" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>James Peter Pulmano</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    Mr. Gacutan show unparalleled passion for his tasks and show 
+                    great enthusiasm in all of his accomplishments. He is extremely
+                    dependable and trustworthy, a highly recommended peer among his 
+                    colleagues.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar.png" alt="Marlyn Louisse Jocson" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Marlyn Louisse Jocson</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    Mr. Gacutan is a very reliable colleague; he always provided extra hours of his time to make sure that his tasks were completed on time, 
+                    and the service level is always high. His technical skills contribute a lot to the processes of our organization. 
+                    <br>
+                    <br>
+                    I would like to work with him again, given the opportunity. He is a very valuable asset to any organization that would like to take advantage
+                    of his skill set. There are a lot of good things I have to say about Mr. Gacutan, and this is why I recommend him to others.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar.png" alt="Dale Patrick DP. Lasala" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Alfred B.</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    I had the pleasure of working with Mr. Gacutan on a project recently, and I must say, it was an exceptional experience from start to finish.
+                    Not only did Mr. Gacutan deliver high-quality work, but he also demonstrated a remarkable level of accommodation throughout the process. 
+                    His attention to detail and commitment to excellence truly stood out.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar.png" alt="Dale Patrick DP. Lasala" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anne</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    I highly recommend Marlou to anyone seeking top-notch professional services. With his expertise, dedication, and talent, 
+                    sure to exceed your expectations and deliver results that truly stand out.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2024-03-11"></time>
+
+              <div data-modal-text>
+                <p>
+
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Polytechnic University of the Philippines</h4>
+
+              <span>2013 — 2017</span>
+
+              <p class="timeline-text">
+                Bachelor of Arts 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Quirino High School</h4>
+
+              <span>2009 — 2013</span>
+
+              <p class="timeline-text">
+                Secondary
+              </p>
+
+            </li>
+
+            </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Freelance</h4>
+
+            <p class="h5 timeline-text">
+              <strong>Web Development</strong>
+              <span>April 2024</span>
+
+              <p class="timeline-text">
+
+                <br>-Created a high-quality website for Okeanus21 Beach Resort, available at <a href="https://okeanus21.com" style="color: turquoise;">okeanus21.com</a></br>
+                <br>-Created a high-quality Photography Portfolio website, available at <a href="https://mong26.github.io/JannConradCV/" style="color: turquoise;">JannCnorad Portfolio</a></br>
+              </p>
+
+            <p class="h5 timeline-text">
+              <strong>WWW.work.onespace.com</strong>
+            <span>November 2018 - December 2023</span>
+            </p>
+
+            <p class="timeline-text">
+
+              <br>-Ensuring data integrity and completeness by verifying entered information for accuracy and consistency;</br>
+              <br>-Organizing and categorizing data according to specified guidelines or requirements;</br>
+              <br>-Performing regular data quality checks to identify and correct errors or discrepancies;</br>
+              <br>-Data entry involves manually inputting information data, using pickup and destination information to generate route rate estimate within the Uber Application and will upload a screenshot of the estimated within task. This is often done by typing information from Uber application sources into website given template in 100% accuracy to minimize errors;</br>
+              <br>-Meeting deadlines and productivity targets while maintaining a high level of accuracy;</br>
+              <br>-Collecting, cleaning, and transforming data from various sources to ensure its accuracy and consistency;</br>
+              <br>-Analyzing complex datasets using statistical techniques and data visualization tools to identify trends, patterns, and correlations; </br>
+              <br>-Interpreting data to extract actionable insights and recommendations for business decisions or strategic planning;</br>
+              <br>-Formulating research objectives and hypotheses based on the scope of the project; and </br>
+              <br>-Conducting comprehensive literature reviews to gather existing knowledge and identify gaps in research.</br>
+              </br>
+            </p>
+
+          </li>
+                      
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Administrative Assistant III (Computer Operator II)</h4>
+            
+              <p class="timeline-text">
+                LGU - Human Resource Management Department
+              </p>
+              
+              <span>3 October 2022 - Present</span>
+
+              <p class="timeline-text">
+                
+                  <br>-Migration of data from the old to the new Human Resource Information System (HRIS) involving approximately 6,000 employees in the agency;</br>
+                  <br>-Monthly consolidation, Maintenance & updating of the Human Resource Information System (HRIS) database;</br>
+                  <br>-Consolidate and create a template for the payroll database, including both employee and government Pag-Ibig contributions, before inputting the data into the payroll system;</br>
+                  <br>-Serve as the secretariat and part of the team responsible for setting up the strategic performance policy, and currently developing new forms for the Strategic Performance Management System (SPMS);</br>
+                  <br>-Creation of HRMD and Quezon City Government Organizational Structure design;</br>
+                  <br>-Communicates and drafts of letters to students and researches relevant to their studies regarding the Quezon City Local Government Unit (QCLGU);</br>
+                  <br>-Create spreadsheets to keep records and other important data;</br>
+                  <br>-Scan and secure office copies of documents necessary for records purposes;</br>
+                  <br>-Drafts memo and reply to a query letter under the Human Resource Planning and Organizational Development Division; and</br>
+                  <br>-Perform administrative support to office activities and perform as computer technician in agency.</br>
+           <br></li>
+            </li>
+                
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Administrative Adie III
+              </h4>
+
+              <p class="timeline-text">
+                LGU - Human Resource Management Department
+              </p>
+              
+              <span>17 November 2020 - 2 October 2022</span>
+              </p>
+
+              <p class="timeline-text">
+
+                <br>-Responsible in performing administrative and technical task; evaluate and reviews requirement/ documents; e.g., pre-screening of applicants for Permanent Positions for Human Resource Merit & Promotion Selection Board (HRMPSB);</br>
+                <br>-Check and reviews qualification standards for the request Publication for the Vacant Positions of the Offices/ Departments;</br>
+                <br>-Create and maintenance of database using MS Excel for Human Resource Merit & Promotions Selection Board and database for the Legislative Contract for Contract of Service, Job Order and Consultant under Legislative Branch;</br>
+                <br>-Migration of data: Consolidate, Maintenance & updating of database for Human Resource Information System (HRIS);</br>
+                <br>-Create spreadsheets to keep records and other important data under Human Resource Development and Administrative Support Division;</br>
+                <br>-Scan and secure office copies of documents necessary for records purposes;</br>
+                <br>-Perform administrative support to office activities and perform as computer technician in our agency.</br>
+              </br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Administrative Support Staff</h4>
+
+              <p class="timeline-text">
+                LGU - Human Resource Management Department
+              </p>
+              
+              <span>1 February 2018 - 16 November 2020</span>
+              </p>
+
+              <p class="timeline-text">
+
+              <br>-Responsible in performing administrative and technical task; evaluate and reviews requirement/ documents; e.g., pre-screening of applicants for Permanent Positions for Human Resource Merit & Promotion Selection Board (HRMPSB);</br>
+              <br>-Check and reviews qualification standards for the request Publication for the Vacant Positions of the Offices/ Departments;</br>
+              <br>-Create and maintenance of database using MS Excel for Human Resource Merit & Promotions Selection Board and database for the Legislative Contract for Contract of Service, Job Order and Consultant under Legislative Branch;</br>
+              <br>-Create spreadsheets to keep records and other important data under Human Resource Development and Administrative Support Division;</br>
+              <br>-Scan and secure office copies of documents necessary for records purposes;</br>
+              <br>-Perform administrative support to office activities and perform as computer technician in our agency.</br>
+              </br>  
+            </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Information Technology Officer</h4>
+
+              <p class="timeline-text">
+                LGU - Small Business and Cooperative Development and Promotions Office  
+              </p>
+              
+              <span>4 January 2016 - 31 January 2018</span>
+              </p>
+
+              <p class="timeline-text">
+
+                <br>-Developed and maintenance of database program for Small Business in Quezon City;</br>
+                <br>-Designed directory book for entrepreneur and Cooperative Tradeshow in Quezon City using Photoshop;</br>
+                <br>-Responsible in performing technical tasks e.g., database program, preparation of monthly report regards on business/ entrepreneur and cooperative;</br>
+                <br>-Designed poster, tarpaulin using Photoshop application;</br>
+                <br>-Perform administrative support to office activities and perform as computer technician in our agency.</br>
+              </br>
+              </p>
+
+          </ol>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+      
+        <section class="projects">
+          
+        <div class="filter-select-box">
+          <button class="filter-select" data-select>
+
+          </button>
+        </div>
+        <ul class="project-list">
+
+          <li class="project-item active" data-filter-item data-category="web development">
+          </figure>
+            <a href="#" class="enlargeable">
+              <img src="./assets/images/WEB.jpg" width="250" height="164" border="0" class="enlargeable-img">
+            <h3 class="project-title">Created a high-quality website named OKEANUS21.COM</h3>
+          <p class="project-category">Web Development</p>
+        </a>
+      </li>    
+
+      <li class="project-item active" data-filter-item data-category="web development">
+      </figure>
+        <a href="#" class="enlargeable">
+          <img src="./assets/images/jann.png" width="250" height="164" border="0" class="enlargeable-img">
+        <h3 class="project-title">Created a high-quality Photographer portfolio website</h3>
+      <p class="project-category">Web Development</p>
+    </a>
+  </li>   
+
+          <li class="project-item active" data-filter-item data-category="web development">
+        </figure>
+          <a href="#" class="enlargeable">
+            <img src="./assets/images/project-8.png" width="250" height="164" border="0" class="enlargeable-img">
+          <h3 class="project-title">Self-Taught create own portfolio website using HTML5, CSS and JavaScript</h3>
+        <p class="project-category">Web Development</p>
+      </a>
+    </li>
+
+    <li class="project-item active" data-filter-item data-category="web development">
+                  <a href="#" class="enlargeable">
+                    <img src="./assets/images/project-1.png" width="250" height="164" border="0" class="enlargeable-img">
+                  </figure>
+                    <h3 class="project-title">Tarpaulin</h3>
+                <p class="project-category">Graphic Design</p>
+             </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" class="enlargeable">
+                <img src="./assets/images/project 7.png" width="250" height="164" border="0" class="enlargeable-img">
+              </figure>
+                <h3 class="project-title">Sample Flyers made last 2016 from my previous job in LGU - SBCDPO</h3>
+            <p class="project-category">Graphic Design</p>
+         </a>
+        </li>
+
+        <li class="project-item active" data-filter-item data-category="web development">
+          <a href="#" class="enlargeable">
+          </figure>
+            <img src="./assets/images/advertising.jpg" width="250" height="164" border="0" class="enlargeable-img">
+           <h3 class="project-title">Advertising Flyers</h3>
+        <p class="project-category">Graphic Design</p>
+       </a>
+      </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" class="enlargeable">
+                <img src="./assets/images/project-2.png" width="250" height="164" border="0" class="enlargeable-img">
+              </figure>
+                <h3 class="project-title">Mailing Merge from excel template to MS Word</h3>
+            <p class="project-category">MS Office</p>
+          </a>
+        </li>
+
+                  <li class="project-item active" data-filter-item data-category="web development">
+                  </figure>
+                    <a href="#" class="enlargeable">
+                      <img src="./assets/images/project-4.png" width="250" height="164" border="0" class="enlargeable-img">
+                    <h3 class="project-title">Automated database created in excel thru BVA</h3>
+                  <p class="project-category">MS Office</p>
+                </a>
+              </li>
+
+
+                <li class="project-item active" data-filter-item data-category="web development">
+                </figure>
+                  <a href="#" class="enlargeable">
+                          <img src="./assets/images/project-5.png" width="250" height="164" border="0" class="enlargeable-img">
+                         <h3 class="project-title">Migration of data from old to new Human Resource Information System (HRIS) with 10,868 position and 6,661 active employees</h3>
+                      <p class="project-category">MS Office</p>
+                     </a>
+                    </li>
+
+                    <li class="project-item active" data-filter-item data-category="web development">
+                    </figure>
+                      <a href="#" class="enlargeable">
+                        <img src="./assets/images/t-shirt design.png" width="250" height="164" border="0" class="enlargeable-img">
+                      <h3 class="project-title">Sample of T-Shirt Design</h3>
+                    <p class="project-category">Graphic Design</p>
+                  </a>
+                </li>    
+
+              </article>
+      
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <p style="font-style: italic; font-size: 20px; text-align: justify; color: white;"> “I’d love it if you reached out to me, even if it’s just to say ‘Hey!’ Don’t hesitate—drop me a line, and I’ll get back to you ASAP!”</p>
+          <br>
+          <hr>
+          <br>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="ba658385-ef7c-406e-9ff0-bd18dcaa6498">
+            
+            <div class="input-wrapper">
+
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+<footer>
+    <div style="color:darkgray; text-align: center; padding-block-end: 20px; " class='cr-con'>Copyright &copy; 2024 | Made by Mong</div>
+</footer>
+  
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
